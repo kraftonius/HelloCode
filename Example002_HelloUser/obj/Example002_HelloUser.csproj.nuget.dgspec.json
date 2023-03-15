@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example001_HelloConsole\\Example001_HelloConsole.csproj": {}
+    "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example002_HelloUser\\Example002_HelloUser.csproj": {}
   },
   "projects": {
-    "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example001_HelloConsole\\Example001_HelloConsole.csproj": {
+    "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example002_HelloUser\\Example002_HelloUser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example001_HelloConsole\\Example001_HelloConsole.csproj",
-        "projectName": "Example001_HelloConsole",
-        "projectPath": "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example001_HelloConsole\\Example001_HelloConsole.csproj",
+        "projectUniqueName": "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example002_HelloUser\\Example002_HelloUser.csproj",
+        "projectName": "Example002_HelloUser",
+        "projectPath": "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example002_HelloUser\\Example002_HelloUser.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example001_HelloConsole\\obj\\",
+        "outputPath": "E:\\!Core\\Geekbrains\\git_C#\\Examples\\Example002_HelloUser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config"
