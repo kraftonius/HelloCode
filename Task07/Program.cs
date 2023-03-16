@@ -19,7 +19,7 @@ number = - number;
 if (number <= 999 && number >= 100)
 {
     lastDigit = number % 10;
-    Console.WriteLine($"Последняя цифра числа {number}: {lastDigit} ");
+    Console.WriteLine($"Последняя цифра числа -> {lastDigit} ");
 }
 else
 {
