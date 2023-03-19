@@ -124,6 +124,6 @@ string isPalindrom(int num1, int minDigits, int maxDigits)
     }
     else
     {
-        return ($"количество цифр в числе {num1} за пределами ограничений: min = {digitLimitMin}; max = {maxDigits}");
+        return ($"количество цифр в числе {num1} за пределами ограничений: min = {minDigits}; max = {maxDigits}");
     }
 }
