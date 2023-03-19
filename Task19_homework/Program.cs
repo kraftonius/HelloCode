@@ -94,14 +94,14 @@ int InvertNumber(int num)
     // Определяем длину числа способом: log10(x) + 1 вместо String.Length
     int length = qDigits(num);
     
-    // Собираем инвертированное число циклом до предпоследнего числа
+    // Собираем инвертированное число циклом до предпоследней цифры
     for (int i = 1; i < length; i++)
     {
         int mod = num % 10;
         invertNum = invertNum + mod * Convert.ToInt32(Math.Pow(10, length - i));
         num = num / 10;
     }
-    // Собираем последнее число
+    // Добавляем последнюю цифру
     invertNum = invertNum + num;
     return invertNum;
 }
