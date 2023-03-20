@@ -29,7 +29,7 @@ string ArrayStringView(int[] arr) // выводит массив в виде с�
     return printArray;
 }
 
-int oddIndexElementSum(int[] arr) // возвращает сумму элементов с нечетным индексом
+int OddIndexElementSum(int[] arr) // возвращает сумму элементов с нечетным индексом
 {
     int sum = 0;
     for (int i = 0; i < arr.Length; i++)
@@ -40,5 +40,5 @@ int oddIndexElementSum(int[] arr) // возвращает сумму элеме�
 }
 
 int[] arrray = GenerateArray(7, 0, 100);
-int oddIndexSum = oddIndexElementSum(arrray);
+int oddIndexSum = OddIndexElementSum(arrray);
 Console.WriteLine($"Масcив и сумма элементов с нечетным индексом:\n{ArrayStringView(arrray)} - > {oddIndexSum}");
