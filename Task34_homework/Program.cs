@@ -3,7 +3,9 @@
 // 2. Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-int[] GenerateRndArray(int size, int min, int max) // Создает массив size - кол-во элементов. min и max - диапазон значений элементов
+int[] GenerateRndArray(int size, int min, int max)
+// Создает массив целых чисел
+// size - кол-во элементов. min и max - диапазон значений элементов
 {
     int[] arr = new int[size];
     Random rnd = new Random();
