@@ -34,11 +34,11 @@ int oddIndexElementSum(int[] arr) // возвращает сумму элеме�
     int sum = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i] % 2 != 0) sum += arr[i];
+        if (i % 2 != 0) sum += arr[i];
     }
     return sum;
 }
 
-int[] arrray = GenerateArray(10, 100, 1000);
-int evenQuantity = CountEven(arrray);
-Console.WriteLine($"Масcив и количество четных элементов в нем:\n{ArrayStringView(arrray)} - > {evenQuantity}");
+int[] arrray = GenerateArray(7, 0, 100);
+int oddIndexSum = oddIndexElementSum(arrray);
+Console.WriteLine($"Масcив и сумма элементов с нечетным индексом:\n{ArrayStringView(arrray)} - > {oddIndexSum}");
