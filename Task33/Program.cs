@@ -33,7 +33,7 @@ bool HasNumber(int num, int[] arr)
     return false;
 }
 
-string arrayToPrint(int[] arr)
+string ArrayToPrint(int[] arr)
 {
     string printArray = String.Empty;
     printArray += "[";
@@ -47,8 +47,8 @@ string arrayToPrint(int[] arr)
 }
 
 int[] array = CreateArrayRndInt(10, 0, 9);
-Console.WriteLine(arrayToPrint(array));
+Console.WriteLine(ArrayToPrint(array));
 int number = Prompt("Число для поиска: ");
 string hasNumber = HasNumber(number, array) ? "да" : "нет";
 
-Console.WriteLine($"{number}; массив {arrayToPrint(array)} -> {hasNumber}");
+Console.WriteLine($"{number}; массив {ArrayToPrint(array)} -> {hasNumber}");

@@ -79,8 +79,9 @@ Console.WriteLine(result);
 
 /////////////////////////////////////////////////////////
 // Функция Получения количества цифр в числе
-int qDigits(int numb)
+int QDigits(int numb)
 {
+    if (numb == 0) return 1;
     return Convert.ToInt32(Math.Round(Math.Log10(Math.Abs(numb)), 0, MidpointRounding.ToZero)) + 1;
 }
 
@@ -92,7 +93,7 @@ int InvertNumber(int num)
     int invertNum = 0;
     
     // Определяем длину числа способом: log10(x) + 1 вместо String.Length
-    int length = qDigits(num);
+    int length = QDigits(num);
     
     // Собираем инвертированное число циклом до предпоследней цифры
     for (int i = 1; i < length; i++)
@@ -111,7 +112,7 @@ int InvertNumber(int num)
 string isPalindrom(int num1, int minDigits, int maxDigits)
 {
     // приводим число к положительному для определения палиндрома
-    if (qDigits(num1) >= minDigits && qDigits(num1) <= maxDigits)
+    if (QDigits(num1) >= minDigits && QDigits(num1) <= maxDigits)
     {
         if (num1 == InvertNumber(num1))
         {
