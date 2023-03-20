@@ -3,7 +3,7 @@
 // 2. Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-int[] GenerateArray(int size, int min, int max) // Создает массив size - кол-во элементов. min и max - диапазон значений элемента
+int[] GenerateRndArray(int size, int min, int max) // Создает массив size - кол-во элементов. min и max - диапазон значений элементов
 {
     int[] arr = new int[size];
     Random rnd = new Random();
@@ -25,21 +25,23 @@ int CountEvenElements(int[] arr) // подсчитывает количеств�
     return count;
 }
 
-string ArrayStringView(int[] arr) // выводит массив в виде строки (элементы в квадратных скобках и запятыми)
+string IntArrayStringView(int[] arr)
+// Возвращает массив целых чисел внутри квадратных скобок через запятую
+// [34, 26, 76, 88, 45,  8, 62]
 {
-    string printArray = String.Empty;
-    printArray += "[";
+    string printArray = "[";
+
     for (int i = 0; i < arr.Length; i++)
     {
         if (i < arr.Length - 1) printArray += $"{arr[i],2}, ";
-        else printArray += $"{arr[i],2}";
+        else printArray += $"{arr[i],2}]";
     }
-    printArray += "]";
     return printArray;
 }
 
 
-int[] arrray = GenerateArray(10, 100, 1000);
+int[] arrray = GenerateRndArray(10, 100, 1000);
 int evenQuantity = CountEvenElements(arrray);
-Console.WriteLine($"Масcив и количество четных элементов в нем:\n{ArrayStringView(arrray)} - > {evenQuantity}");
+Console.WriteLine($@"Масcив и количество четных элементов в нем:
+{IntArrayStringView(arrray)} - > {evenQuantity}");
 
