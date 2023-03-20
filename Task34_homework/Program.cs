@@ -45,5 +45,5 @@ string IntArrayStringView(int[] arr)
 int[] arrray = GenerateRndArray(10, 100, 1000);
 int evenQuantity = CountEvenElements(arrray);
 Console.WriteLine($@"Масcив и количество четных элементов в нем:
-{IntArrayStringView(arrray)} - > {evenQuantity}");
+{IntArrayStringView(arrray)} -> {evenQuantity}");
 

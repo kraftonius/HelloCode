@@ -46,4 +46,4 @@ int OddIndexElementSum(int[] arr)
 int[] array = GenerateRndArray(7, 0, 100);
 int oddIndexSum = OddIndexElementSum(array);
 Console.WriteLine($@"Масcив и сумма элементов с нечетным индексом:
-{IntArrayStringView(array)} - > {oddIndexSum}");
+{IntArrayStringView(array)} -> {oddIndexSum}");

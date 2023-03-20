@@ -77,4 +77,4 @@ double difference = Math.Round(maxDoubleElement - minDoubleElement, 1);
 // Выведем ответ
 string stringDifference = DoubleToStringDotView(difference);
 Console.WriteLine($@"Масcив и разница максимального и минимального элементов: 
-{DoubleArrayStringView(array)} - > {stringDifference}");
+{DoubleArrayStringView(array)} -> {stringDifference}");
