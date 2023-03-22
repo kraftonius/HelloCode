@@ -24,6 +24,17 @@ double PromptDouble(string message)
     return result;
 }
 
+bool IsParallel(double k1, double k2)
+{
+    return k1 == k2;
+}
+
+bool IsSameLine(double b1, double k1, double b2, double k2)
+{
+    return k1 == k2 && b1 == b2;
+}
+
+
 double GetXCoord(double b1, double k1, double b2, double k2)
 {
     return (b1 - b2) / (k2 - k1);
@@ -39,6 +50,21 @@ double b1Value = PromptDouble("Введите значение b1: ");
 double k1Value = PromptDouble("Введите значение k1: ");
 double b2Value = PromptDouble("Введите значение b2: ");
 double k2Value = PromptDouble("Введите значение k2: ");
-double xCoord = GetXCoord(b1: b1Value, k1: k1Value, b2: b2Value, k2: k2Value);
-double yCoord = GetYCoord(b1: b1Value, k1: k1Value, b2: b2Value, k2: k2Value);
-Console.WriteLine(k1Value == k2Value ? "Нет решения" : $"b1 = {b1Value}, k1 = {k1Value}, b2 = {b2Value}, k2 = {k2Value} -> ({xCoord}; {yCoord})");
+
+if (IsSameLine(b1: b1Value, k1: k1Value, b2: b2Value, k2: k2Value))
+{
+    Console.WriteLine("Линии совпадают");
+}
+else if (IsParallel(k1: k1Value, k2: k2Value))
+{
+    Console.WriteLine("Линии параллельны");
+}
+else
+{
+    double xCoord = GetXCoord(b1: b1Value, k1: k1Value, b2: b2Value, k2: k2Value);
+    double yCoord = GetYCoord(b1: b1Value, k1: k1Value, b2: b2Value, k2: k2Value);
+    Console.WriteLine($"b1 = {b1Value}, k1 = {k1Value}, b2 = {b2Value}, k2 = {k2Value} -> ({xCoord}; {yCoord})");
+}
+
+
+
