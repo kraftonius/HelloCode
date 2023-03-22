@@ -41,4 +41,4 @@ double b2Value = PromptDouble("Введите значение b2: ");
 double k2Value = PromptDouble("Введите значение k2: ");
 double xCoord = GetXCoord(b1: b1Value, k1: k1Value, b2: b2Value, k2: k2Value);
 double yCoord = GetYCoord(b1: b1Value, k1: k1Value, b2: b2Value, k2: k2Value);
-Console.WriteLine($"b1 = {b1Value}, k1 = {k1Value}, b2 = {b2Value}, k2 = {k2Value} -> ({xCoord}; {yCoord})");
+Console.WriteLine(k1Value == k2Value ? "Нет решения" : $"b1 = {b1Value}, k1 = {k1Value}, b2 = {b2Value}, k2 = {k2Value} -> ({xCoord}; {yCoord})");
