@@ -25,7 +25,7 @@ int[,] GenerateMatrixRndInt(int rows, int columns, int min, int max)
 int GetMainDiagonalElementsSum(int[,] matrix)
 {
     int sum = 0;
-    for (int i = 0; i < matrix.GetLength(0) && matrix.GetLength(1); i++)
+    for (int i = 0; i < matrix.GetLength(0) && i < matrix.GetLength(1); i++)
     {
         sum += matrix[i, i];
     }
